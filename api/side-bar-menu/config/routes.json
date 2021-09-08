@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/side-bar-menus",
+      "handler": "side-bar-menu.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/side-bar-menus/count",
+      "handler": "side-bar-menu.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/side-bar-menus/:id",
+      "handler": "side-bar-menu.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/side-bar-menus",
+      "handler": "side-bar-menu.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/side-bar-menus/:id",
+      "handler": "side-bar-menu.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/side-bar-menus/:id",
+      "handler": "side-bar-menu.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

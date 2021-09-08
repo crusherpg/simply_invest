@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "statusinfos",
+  "info": {
+    "name": "statusinfo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "infoTitle": {
+      "type": "string"
+    },
+    "count": {
+      "type": "string"
+    }
+  }
+}

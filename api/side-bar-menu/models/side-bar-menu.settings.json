@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "side_bar_menus",
+  "info": {
+    "name": "Side Bar Menu"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    }
+  }
+}

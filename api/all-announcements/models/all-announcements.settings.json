@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "all_announcements",
+  "info": {
+    "name": "All Announcements"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "description_link": {
+      "type": "string"
+    },
+    "announcement_type": {
+      "type": "enumeration",
+      "enum": [
+        "MF",
+        "IMPORTANT",
+        "EXPERT"
+      ],
+      "required": true
+    },
+    "Added_on": {
+      "type": "datetime"
+    },
+    "announcement_id": {
+      "type": "uid"
+    }
+  }
+}

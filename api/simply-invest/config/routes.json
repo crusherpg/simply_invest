@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/simply-invests",
+      "handler": "simply-invest.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/simply-invests/count",
+      "handler": "simply-invest.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/simply-invests/:id",
+      "handler": "simply-invest.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/simply-invests",
+      "handler": "simply-invest.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/simply-invests/:id",
+      "handler": "simply-invest.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/simply-invests/:id",
+      "handler": "simply-invest.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

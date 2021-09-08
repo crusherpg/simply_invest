@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "simply_invests",
+  "info": {
+    "name": "Simply Invest",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "categories": {
+      "via": "simply_invests",
+      "collection": "category"
+    },
+    "TestJSON": {
+      "type": "json"
+    },
+    "Email_ID": {
+      "type": "email"
+    },
+    "Password": {
+      "type": "password"
+    },
+    "Mobile": {
+      "type": "integer"
+    },
+    "Gender": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female",
+        "Other"
+      ]
+    },
+    "Registered": {
+      "type": "datetime"
+    },
+    "Profile_Pic": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Deactivate": {
+      "type": "boolean"
+    }
+  }
+}

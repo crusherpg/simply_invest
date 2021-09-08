@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "countries",
+  "info": {
+    "name": "Countries",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}
